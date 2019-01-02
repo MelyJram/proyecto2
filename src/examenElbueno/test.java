@@ -18,7 +18,6 @@ public class test {
 	
 	public static void leerPreguntas() throws IOException {
 
-	
 			
 			try {
 				FileInputStream f= new FileInputStream("/Users/melyjram/Desktop/sample-questions.xlsx");
