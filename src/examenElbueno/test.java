@@ -3,6 +3,7 @@ package examenElbueno;
 import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Iterator;
 import org.apache.poi.ss.usermodel.Cell;
@@ -46,13 +47,19 @@ public class test {
 					
 						System.out.println(celda.getStringCellValue());
 						
+						
+					
+						
+						
+						String archivo = null;
+						FileOutputStream salida = new FileOutputStream((String) archivo);
+						
+						libro.write(salida);
+						
+						
 						break;
-					
-					
-					}
-					
-				
-				}
+					}         
+	            }
 			}
 			
 			((Closeable) libro).close() ;
