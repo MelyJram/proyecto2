@@ -51,19 +51,7 @@ public class examen{
 	             ArrayPreguntas[contador].respuestaCorrecta = fila.getCell(1).getStringCellValue();
 	             ArrayPreguntas[contador].index = contador;
 
-	             /*
-	             Celdas = fila.cellIterator();
 	             
-	             while (Celdas.hasNext()) {
-	                 celda = Celdas.next();
-	                 
-	                 switch(celda.getCellType()) {	                 
-	                 case Cell.CELL_TYPE_STRING:;
-	                 
-	                     System.out.println(celda.getStringCellValue());
-	                     
-	                     break;
-	                     */
 	             System.out.println("pregunta " + ArrayPreguntas[contador].getPregunta() + "respuesta " + ArrayPreguntas[contador].getRespuestaCorrecta());
 	             contador ++;
 	                 }
